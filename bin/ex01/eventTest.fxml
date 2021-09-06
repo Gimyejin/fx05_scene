@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="157.0" prefWidth="352.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ex01.Controller">
+   <children>
+      <Text layoutX="42.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="성    별" />
+      <Text layoutX="42.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="취    미" />
+      <Text layoutX="42.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="연령구분" />
+       <RadioButton fx:id="rdoWoman" layoutX="117.0" layoutY="25.0" mnemonicParsing="false" text="여성">
+         <toggleGroup>
+            <ToggleGroup fx:id="gender" />
+         </toggleGroup>
+      </RadioButton>
+      <CheckBox fx:id="chkMusic" layoutX="118.0" layoutY="64.0" mnemonicParsing="false" text="음악" />
+      <CheckBox fx:id="chkSport" layoutX="179.0" layoutY="64.0" mnemonicParsing="false" text="스포츠" />
+      <CheckBox fx:id="chkMovie" layoutX="249.0" layoutY="64.0" mnemonicParsing="false" text="영화" />
+     
+      <RadioButton fx:id="rdoMan" layoutX="178.0" layoutY="25.0" mnemonicParsing="false" text="남성" toggleGroup="$gender" />
+      <ComboBox fx:id="cmbAge" layoutX="118.0" layoutY="98.0" prefWidth="150.0" promptText="연령대 선택" />
+      <Button layoutX="292.0" layoutY="121.0" mnemonicParsing="false" onAction="#viewProc" text="확  인" />
+   </children>
+</AnchorPane>
